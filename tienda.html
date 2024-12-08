@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucem</title>
+    <link rel="icon" href="img/lucemlogofav.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-container">
+            <div class="logo-title-container">
+                <div class="logo">
+                    <img src="./img/lucemlogo.png" alt="Lucem Logo">
+                </div>
+
+                <div class="titleheader">
+                    <h1><strong>Lucem Crafts</strong></h1>
+                </div>
+            </div>
+        
+<!-- Botón hamburguesa, inicialmente oculto -->
+<div class="hamburger-menu">☰</div>
+        
+<!-- Contenedor del menú, que se muestra/oculta -->
+            <div class="button-container">
+                <a href="./index.html"><button>Home</button></a>
+                <a href="./nosotros.html"><button>Nosotros</button></a>
+                <a href="./tienda.html"><button class="active">Tienda</button></a>
+                <!-- <a href="./pedidos.html"><button>Pedidos</button></a> -->
+                <a href="./amigos.html"><button>Amigos</button></a>
+                <a href="./contacto.html"><button>Contacto</button></a>
+            </div>
+            <div class="icons-container">
+                <div class="icon login">
+                    <img src="./img/login.jpg" alt="Logo Login">
+                </div>
+                <div class="icon cart">
+                    <a href="./carrito.html">
+                    <img src="./img/cart.jpg" alt="Logo de carrito"></a>
+                </div>
+            </div>    
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenedor para las tarjetas dinámicas -->
+<div id="product-container" class="product-grid"></div>
+
+        
+    <!--    <article class="product-grid">
+            <div class="product-item">
+                <img src="./img/portasahumerios.jpg" alt="Porta Sahumerios">
+                <div class="product-description">
+                    <p><strong>Caja Porta Sahumerios</strong><br>Materiales: madera, acrílicos, estaño y strass.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="1">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="product-item">
+                <img src="./img/cajadetemed.jpg" alt="Caja de Té Mediana Violeta">
+                <div class="product-description">
+                    <p><strong>Caja de Té Mediana Violeta:</strong><br>Materiales: madera, acrílicos, estaño y decoupage.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="2">Comprar</button>    
+                </div>
+            </div>
+    
+            <div class="product-item">
+                <img src="./img/cajoneramedrosvie.jpg" alt="Cajonera Mediana Rosa Viejo">
+                <div class="product-description">
+                    <p><strong>Cajonera Mediana Rosa Viejo:</strong><br>Materiales: madera, acrílicos, estaño y strass.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="3">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./img/alhajeroch.jpg" alt="Alhajero Chico">
+                <div class="product-description">
+                    <p><strong>Alhajero Chico:</strong><br>Materiales: Bizcocho cerámico, acrílicos, estaño y laca vitral.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="4">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./img/alhajerogde.jpg" alt="Alhajero Grande">
+                <div class="product-description">
+                    <p><strong>Alhajero Grande:</strong><br>Materiales: Bizcocho cerámico, acrílicos, estaño y laca vitral.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="5">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./img/cuadelef1.jpg" alt="Cuadro de Elefante 1">
+                <div class="product-description">
+                    <p><strong>Cuadro de Elefante 1:</strong><br>Fibrofácil, acrílicos estaño y laca vitral.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="6">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./img/cuadelef2.jpg" alt="Cuadro de Elefante 2">
+                <div class="product-description">
+                    <p><strong>Cuadro de Elefante 2:</strong><br>Fibrofácil, acrílicos estaño y laca vitral.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="7">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="product-item">
+                <img src="./img/floreronegro.jpg" alt="Florero Negro">
+                <div class="product-description">
+                    <p><strong>Florero Negro:</strong><br>Materiales: Bizcocho cerámico, acrílicos, estaño y laca vitral.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="8">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./img/florerorosa.jpg" alt="Florero Rosa">
+                <div class="product-description">
+                    <p><strong>Florero Rosa:</strong><br>Materiales: Bizcocho cerámico, acrílicos, estaño, laca vitral y brillantes.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="9">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="product-item">
+                <img src="./img/florerorojo.jpg" alt="Florero Rojo">
+                <div class="product-description">
+                    <p><strong>Florero Rojo:</strong><br>Materiales: Bizcocho cerámico, acrílicos, estaño, laca vitral y brillante.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="10">Comprar</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="./img/manofatvn.jpg" alt="Cuadro Mano de Fátima Verde y Naranja">
+                <div class="product-description">
+                    <p><strong>Cuadro Mano de Fátima Verde y Naranja:</strong><br>Fibrofácil, acrílicos estaño, laca vitral y gema.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="11">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="product-item">
+                <img src="./img/manofatcr.jpg" alt="Cuadro Mano de Fátima Celeste y Rosa">
+                <div class="product-description">
+                    <p><strong>Cuadro Mano de Fátima Celeste y Rosa:</strong><br>Fibrofácil, acrílicos estaño, laca vitral y gema.</p>
+                </div>
+                <div class="botoncontainer">
+                    <button data-id="12">Comprar</button>
+                </div>
+            </div>
+        </article> -->
+    </main>
+    
+    <footer> 
+        <div class="footer-container">
+            <div class="titlefoot">
+                <h2>Iter ad Lucem</h2>
+            </div>
+                <div class="footer-content">
+                    <div class="copy">
+                        <p>© COPYRIGHT LUCEM TIENDA DE ARTESANIAS</p>
+                    </div>
+                <div class="iconfoot-container">
+                    <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt="Logo de Instagram"></a>
+                    <a href="https://www.pinterest.com" target="_blank"><img src="./img/pinterest.png" alt="Logo de Pinterest"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="Logo de Facebook"></a>
+                    <a href="https://www.whatsapp.com" target="_blank"><img src="./img/whatsapp.png" alt="Logo de WhatsApp"></a>
+                </div>
+                    <div class="dev-container">
+                        <div class="dev-icon">
+                            <a href="https://www.linkedin.com/in/maria-lorena-fernandez-gomez-827817272/" target="_blank"><img src="./img/linkedin.png" alt="Linkedin logo"></a>
+                        </div>
+                        <div class="dev-data">
+                            <p>Desarrollador: Ma. Lorena Fernandez Gomez</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+<!-- Enlace al archivo JavaScript externo -->
+     <script src="./js/jscript.js"></script>
+     <script src="./js/prueba.js"></script>
+     <script src="./js/tienda.js"></script>
+     <script src="./js/carrito.js"></script>
+     <script src="./js/pedidos.js"></script>
+</body>
+</html>
+
